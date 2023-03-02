@@ -40,7 +40,7 @@ ul {
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto
 }   
 
@@ -88,9 +88,9 @@ body{
 
 .container {
     width: 100%;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ body{
 /*   -------  HERO   -------   */
 .button {
     padding: 16px 32px;
-    margin-top: 48px;
+    margin-top: 72px;
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -186,8 +186,8 @@ body{
 .hero{    
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
     background-color: var(--footer-background-color);    
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1\ \(1\).jpg);
@@ -197,11 +197,11 @@ body{
 }
 
 .hero-title {
-    max-width: 496px;
+    max-width: 320px;
     margin: 0 auto;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;    
+    font-size: 36px;
+    line-height: 1.11;    
     letter-spacing: 0.02em;
     color: var(--white-color);
 }
@@ -220,40 +220,36 @@ body{
 
 
 .headline{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
 /*   -------  FEATURE   -------   */
 
 .section-feature {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.feature {
-    display: flex;
-    justify-content: center;
-    
-    gap: 24px;
-    
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .feature-list {
     margin-bottom: 8px;
 }
 
+.feature-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+}
+.feature-items{
+    margin-bottom: 72px;
+}
 
 .feature-picture { 
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-    margin-bottom: 8px;
-    background: var(--secondary-backgrountd-color);
-    border-radius: 4px;
+    display: none;  
 }
 
 
@@ -261,26 +257,25 @@ body{
 /*   -------  WORKS   -------   */
 
 .section-works{
-    padding-bottom: 120px;
-}
-.works-list{
-    display: flex;
-    gap: var(--list-gap);
+    display: none;
 }
 
 /*   -------  TEAMS   -------   */
-.teams{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: var(--secondary-backgrountd-color);
+
+.container{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
-.teams-list{
-    display: flex;
-    gap: var(--list-gap);
+.teams{
+    padding-top: 96px;
+    padding-bottom: 128px;
+    background-color: var(--secondary-backgrountd-color);
 }
 
 
 .teams-items{
+    margin-top: 72px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -296,7 +291,6 @@ body{
     margin-bottom: 8px;
 }
 .title{
-    flex-basis: calc(100%/4-24px);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -338,23 +332,26 @@ background: var(--secondary-accent-color);
 /*   ------- CUSTOMERS --------  */
 
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
+
+
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
-
 
 .customers-logo-item {
-    width: calc((100%-120px)/6);
-    height: 88px;    
+    width: calc((100% - 16px) / 2);
+    height: 88px;
 }
 
+
 .customers-logo-link {
-    width: 100%;
+    width: 1;
     height: 100%;
     border: 1px solid var(--custom-border-first);
     border-radius: 4px;
@@ -381,11 +378,11 @@ background: var(--secondary-accent-color);
 /*   -------  FOOTER   -------   */
 footer{ 
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     align-items: baseline;
     background-color: var(--footer-background-color);    
-}
+} 
 
 .footer-logo{    
     font-family:'Raleway', sans-serif;
@@ -396,8 +393,14 @@ footer{
     color: var(--white-color);
 }
 
+.logo-footer{
+    text-align: center;
+}
 .footer-text{
-    width: 264px;
+    text-align: left;
+    max-width: 264px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
     font-size: 16px;
     line-height: 1.5;
@@ -427,7 +430,8 @@ footer{
 }
 
 .footer-soc-list {
-    display: flex;    
+    display: flex; 
+    justify-content: center;   
     gap: 16px;
 }
 
@@ -457,28 +461,27 @@ footer{
     fill: rgba(244, 244, 253, 1);
 }
 .footer-container{
-    display: flex;
     width: 100%;
-    max-width: 1158px;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
 .soc-footer{
-    margin-left: 120px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .footer-subscribe {
-    margin-left: 80px;
+    margin-top: 72px;
 }
-.subscribe-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .subscribe-text{
     margin-bottom: 16px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -487,11 +490,10 @@ footer{
 }
 
 .subscribe-input{
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    padding-bottom: 8px;   
     background: var(--footer-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -504,6 +506,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 16px;
     width: 165px;
     height: 40px;
     background: var(--primary-accent-color);
@@ -511,7 +514,8 @@ footer{
     border: none;
     cursor: pointer;
     color: var(--white-color);
-    margin-left: 24px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -573,6 +577,14 @@ footer{
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+}
+
+.gallery-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
 }
 
 .gallery-item {
