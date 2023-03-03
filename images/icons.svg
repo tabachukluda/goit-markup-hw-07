@@ -73,5 +73,11 @@
     <symbol id="icon-Frame-3-1" viewBox="0 0 32 32">
       <path fill="#fff" style="fill: var(--color1, #fff)" d="M32.003 2.667l-32.003 15.002 10.228 3.156 15.775-12.324-11.999 13.489 0.009 0.004-0.012-0.004v7.346l5.735-5.577 7.267 2.243 4.999-23.336z"></path>
     </symbol>
+    <symbol id="icon-mob-menu-close" viewBox="0 0 32 32">
+      <path d="M32.021 3.226l-3.226-3.226-12.784 12.784-12.784-12.784-3.226 3.226 12.784 12.784-12.784 12.784 3.226 3.226 12.784-12.784 12.784 12.784 3.226-3.226-12.784-12.784 12.784-12.784z"></path>
+      </symbol>
+    <symbol id="icon-mob-menu-open" viewBox="0 0 47 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.162h42.975M1.961 15.62h42.975M1.961 2.079h42.975"></path>
+    </symbol>
     </defs>
 </svg>
