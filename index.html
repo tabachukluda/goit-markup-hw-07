@@ -36,15 +36,15 @@
             <li class="auth-item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        <button type="button" class="menu-open" data-menu-open>
-            <svg class="menu-open-icon" width="30" height="19">
+        <button type="button" class="menu-open pointer js-open-menu">
+            <svg class="menu-open-icon" width="32" height="22">
                 <use href="./images/icons.svg#icon-menu-open"></use>
             </svg>
         </button>
         </div>
-            <div class="container-mob-menu is-hidden" data-menu>
+            <div class="container-mob-menu js-menu-container is-hidden" >
             <div> 
-            <button type="button" class="menu-close" data-menu-close>
+            <button type="button" class="menu-close pointer js-close-menu">
             <svg class="menu-close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-mob-menu-close"></use>
             </svg>
@@ -153,13 +153,19 @@
                 <h2 class="section-title">What are we doing</h2>
             <ul class="works-list list">
                 <li>
-                    <img src="./images/photo1.jpg" alt="monitor" width="360">
+                    <img 
+                    srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                    src="./images/photo1.jpg" alt="monitor" width="360">
                 </li>
                 <li>
-                    <img src="./images/photo2.jpg" alt="phone" width="360">
+                    <img 
+                    srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
+                    src="./images/photo2.jpg" alt="phone" width="360">
                 </li>
                 <li>
-                    <img src="./images/photo3.jpg" alt="laptop with phone" width="360">
+                    <img
+                    srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
+                    src="./images/photo3.jpg" alt="laptop with phone" width="360">
                 </li>
             </ul>
             </div>
@@ -169,7 +175,9 @@
             <h2 class="section-title team">Our Team</h2>
             <ul class="teams-list list">
                 <li class="teams-items">
-                    <img src="./images/face1.jpg" alt="man1" width="264">
+                    <img 
+                    srcset="./images/face1.jpg 1x, ./images/face1-2x.jpg 2x"
+                    src="./images/face1.jpg" alt="man1" width="264">
                 <div class="item-team">
                     <h3 class="teams-subject headline">Mark Guerrero</h3>
                     <p class="title text">Product Designer</p>
@@ -206,7 +214,9 @@
                 </div>
                 </li>
                 <li class="teams-items">
-                    <img src="./images/face2.jpg" alt="man2" width="264">
+                    <img 
+                    srcset="./images/face2.jpg 1x, ./images/face2-2x.jpg 2x"
+                    src="./images/face2.jpg" alt="man2" width="264">
                 <div class="item-team">
                     <h3 class="teams-subject headline">Tom Ford</h3>
                     <p class="title text">Frontend Developer</p>
@@ -243,7 +253,9 @@
                 </div>
                 </li>
                 <li class="teams-items">
-                    <img src="./images/face3.jpg" alt="woman" width="264">
+                    <img 
+                    srcset="./images/face3.jpg 1x, ./images/face3-2x.jpg 2x"
+                    src="./images/face3.jpg" alt="woman" width="264">
                 <div class="item-team">
                     <h3 class="teams-subject headline">Camila Garcia</h3>
                     <p class="title text">Marketing</p>
@@ -280,7 +292,9 @@
                 </div>
                 </li>
                 <li class="teams-items">
-                    <img src="./images/face4.jpg" alt="man3" width="264">
+                    <img 
+                    srcset="./images/face4.jpg 1x, ./images/face4-2x.jpg 2x"
+                    src="./images/face4.jpg" alt="man3" width="264">
                 <div class="item-team">
                     <h3 class="teams-subject headline">Daniel Wilson</h3>
                     <p class="title text">UI Designer</p>
@@ -475,7 +489,7 @@
     </div>
 </div>
 <script src="./js/modal.js"></script> 
-<script src="./js/menu.js"></script> 
+<script src="./js/mobile-menu"></script> 
 </body>
 
 </html> 

@@ -133,11 +133,13 @@ display: none;
 }
 
 .menu-open{
+    display: block;
     margin-top: 24px;
     margin-left: auto;
     border-color: transparent;
     background-color: var(--white-color);
 }
+
 .menu-open-icon{
     stroke: var(--primary-text-color);
 }
@@ -301,10 +303,21 @@ display: none;
     padding-bottom: 112px;
     text-align: center;
     background-color: var(--footer-background-color);    
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1\ \(1\).jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ,url(../images/people-office1-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx)
+{
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office1-mob-2x.jpg);
+    /* background-color: var(--footer-background-color); */
+}
 }
 
 .hero-title {

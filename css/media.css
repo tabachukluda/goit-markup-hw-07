@@ -93,10 +93,26 @@
             padding-top: 24px;
             padding-bottom: 24px;
         }
-
+        
+        .menu-open{
+            display: none;
+        }
 
         /*    Hero      */
+    
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1-tab.jpg);
+        }
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1-tab-2x.jpg);
+            }
+        }
+        
     .hero-title {
         max-width: 496px;
         font-size: 56px;
@@ -535,7 +551,9 @@
             padding-bottom: 24px;
         }
 
-
+        .menu-open {
+            display: none;
+        }
 
 
     /*    Hero      */
@@ -545,8 +563,20 @@
         margin: 0 auto;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\).jpg);
     }
     
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office1-2x.jpg);
+        }
+    }
+
+
+
     .button {
         margin-top: 48px;
     }
@@ -587,12 +617,12 @@
 
     .section-works {
         display: unset;
-        padding-bottom: 120px;
     }
     
     .works-list {
         display: flex;
         gap: var(--list-gap);
+        margin-bottom: 120px;
     }
     
     /*     TEAMS    */
