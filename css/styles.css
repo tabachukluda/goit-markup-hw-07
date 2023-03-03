@@ -84,7 +84,9 @@ body{
     bottom: -24px;
 }
 
-
+.no-scroll{
+    overflow: hidden;
+}
 
 .container {
     width: 100%;
@@ -124,11 +126,21 @@ display: none;
 
 .nav-container{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+
     padding-top: 16px;
     padding-bottom: 16px;
 }
 
+.menu-open{
+    margin-top: 24px;
+    margin-left: auto;
+    border-color: transparent;
+    background-color: var(--white-color);
+}
+.menu-open-icon{
+    stroke: var(--primary-text-color);
+}
 /*   Mob-menu   */
 
 .container-mob-menu{

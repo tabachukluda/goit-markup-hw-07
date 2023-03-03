@@ -76,7 +76,7 @@
     <symbol id="icon-mob-menu-close" viewBox="0 0 32 32">
       <path d="M32.021 3.226l-3.226-3.226-12.784 12.784-12.784-12.784-3.226 3.226 12.784 12.784-12.784 12.784 3.226 3.226 12.784-12.784 12.784 12.784 3.226-3.226-12.784-12.784 12.784-12.784z"></path>
       </symbol>
-    <symbol id="icon-mob-menu-open" viewBox="0 0 47 32">
+    <symbol id="icon-menu-open" viewBox="0 0 47 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.162h42.975M1.961 15.62h42.975M1.961 2.079h42.975"></path>
     </symbol>
     </defs>
