@@ -23,6 +23,36 @@
             height: 40px;
         }
     
+         /*    Backdrop */
+        
+    .modal {
+        min-width: 392px;
+        min-height: 586px;
+        padding: 24px;
+    }
+    .modal-title {
+            width: 100%;
+            margin-bottom: 16px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: var(--footer-background-color);
+    
+    }
+    .checkbox-text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+            color: #757575;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin-bottom: 24px;
+    
+    }
 }
 
 @media screen and (min-width: 768px) {
