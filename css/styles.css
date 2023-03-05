@@ -97,10 +97,6 @@ body{
 
 /*   --------- HEADER ----------   */
 
-header{
-    position: relative;
-}
-
 .web{
     color:var(--primary-accent-color)
 }
@@ -127,13 +123,12 @@ display: none;
     display: flex;
     align-items: flex-end;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .menu-open{
     display: block;
-    margin-top: 24px;
     margin-left: auto;
     border-color: transparent;
     background-color: var(--white-color);
@@ -150,7 +145,6 @@ display: none;
     height: 100%;
     top: 0;
     left: 0;
-    margin-top: 24px;
     margin-right: 24px;
     background: var(--white-color);
     z-index: 999;
@@ -183,6 +177,7 @@ display: none;
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    margin-top: 24px;
     margin-bottom: 32px;
     border-radius: 50%;
     background: var(--footer-text-color);
@@ -205,10 +200,10 @@ display: none;
 
 .mob-menu-link {
     text-decoration: none;
-        color: var(--primary-text-color);
-        transition-property: color;
-        transition-duration: var(--trans-dur);
-        transition-timing-function: var(--trans-time);
+    color: var(--primary-text-color);
+    transition-property: color;
+    transition-duration: var(--trans-dur);
+    transition-timing-function: var(--trans-time);
 }
 
 .mob-menu-link:hover,
@@ -223,10 +218,11 @@ display: none;
     position: relative;
 }
 
-
+.mob-menu-auth-list{
+    margin-bottom: 48px;
+}
 
 .mob-menu-tel-item {
-    margin-top: 40px;
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 20px;
@@ -240,13 +236,14 @@ display: none;
     font-size: 20px;
     line-height: 1.2;
     color: var(--secondary-text-color);    
-    margin-bottom: 48px;
+    
 }
 
 .mob-menu-soc-list {
     display: flex;
     justify-content: center;
     gap: 45px;
+    margin-bottom: 40px;
 }
 
 
@@ -311,6 +308,7 @@ display: none;
 
 .hero{    
     max-width: 1440px;
+    height: 100%;
     margin: 0 auto;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -369,20 +367,17 @@ display: none;
     padding-bottom: 96px;
 }
 
-.feature-list {
-    margin-bottom: 8px;
+.feature-items:not(:last-child){
+    margin-bottom: 72px;
 }
-
 .feature-title {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
-.feature-items{
-    margin-bottom: 72px;
-}
+
 
 .feature-picture { 
     display: none;  
@@ -392,6 +387,14 @@ display: none;
 
 /*   -------  WORKS   -------   */
 
+.section-works {
+    padding-bottom: 120px;
+}
+    
+.works-list {
+    display: flex;
+    gap: var(--list-gap);
+}
 .section-works{
     display: none;
 }
@@ -419,6 +422,12 @@ display: none;
     text-align: center;
 }
 .teams-subject{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--footer-background-color);
     margin-bottom: 8px;
 }
 .title{
@@ -467,11 +476,14 @@ background: var(--secondary-accent-color);
     padding-bottom: 96px;
 }
 
-
+.customers.container{
+    width: 100%;
+}
 
 .customers-list {
     display: flex;
-    gap: 16px;
+    column-gap: 16px;
+    row-gap: 72px;
     flex-wrap: wrap;
 }
 
@@ -625,6 +637,8 @@ footer{
     height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;   
+    padding-left: 16px;
+    padding-right: 16px;
     background: var(--footer-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -662,6 +676,7 @@ footer{
 }
 .subscribe-icon{
     margin-left: 16px;
+    margin-right: 24px;
 }
 /* Portfolio*/
 
@@ -861,10 +876,10 @@ footer{
     transition-duration: var(--trans-dur);
     transition-timing-function: var(--trans-time)
 }
-.modal-but{
+.modal-but {
     padding: 16px 32px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -876,8 +891,8 @@ footer{
     margin: 0 auto;
     display: block;
     cursor: pointer;
-    
-    
+
+
     transition-property: backgrount-color;
     transition-duration: var(--trans-dur);
     transition-timing-function: var(--trans-time)
@@ -887,7 +902,6 @@ footer{
 .modal-but:focus {
     background-color: var(--secondary-accent-color);
 }
-
 .input-text{
     display: inline-block;
     margin-bottom: 4px;
